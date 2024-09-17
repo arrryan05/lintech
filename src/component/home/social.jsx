@@ -1,5 +1,5 @@
 import Image from "next/image";
-import social from "../../../assets/social.png"
+import social from "../../../assets/Social.png"
 export default function Social() {
     return(
         <div style={{ height: '100vh', overflow: 'scroll' }}>
