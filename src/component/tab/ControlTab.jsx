@@ -7,7 +7,7 @@ const ControlTab = ({ active, setactive, tabs }) => {
   return (
     <>
       <motion.div
-        className=" rounded-full flex items-center p-[4.5px] 3xl:p-[6px] secondary-bg w-fit"
+        className=" rounded-full flex items-center p-[4.5px] 3xl:p-[6px] secondary-bg w-fit overflow-x-auto"
         whileInView="visible"
         initial="hidden"
         viewport={{ once: true }}

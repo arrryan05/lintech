@@ -81,7 +81,7 @@ function HomeTop({data}) {
           alt=""
           height={520}
           width={601}
-          className=" z-0 m-auto h-auto object-cover w-auto rounded-2xl aspect-auto "
+          className=" z-0 m-auto h-auto object-cover w-auto rounded-tl-[40%] rounded-bl-[40%] aspect-auto "
         />
       </div>
         </motion.h1>

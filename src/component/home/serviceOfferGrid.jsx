@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import logo_service from "../../../assets/card-logo.svg"
-import logo_service_dark from "../../../assets/card-logo-dark.svg"
+import logo_service from "../../../assets/card-logo.svg";
+import logo_service_dark from "../../../assets/card-logo-dark.svg";
 import Image from "next/image";
-
 
 function ServiceOfferGrid({ data }) {
   const [showAll, setShowAll] = useState(false);
@@ -53,25 +52,27 @@ function ServiceOfferGrid({ data }) {
         >
           <Link href={item.href}>
             <div
-              className={`rounded-2xl hover:bg-black hover:text-white hover:ring-1 hover:ring-[#2684FB] homecardHover md:p-8 p-6 h-[320px]`}
-              onMouseEnter={() => setIsHovered(true)} 
-              onMouseLeave={() => setIsHovered(false)} 
+              className={`rounded-2xl hover:bg-black hover:text-white flex flex-col items-center hover:ring-1 hover:ring-[#2684FB] homecardHover md:p-8 p-6 h-[220px]`}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
             >
               <div className="flex justify-between mb-8">
                 <div
                   className={`text-white hover:text-white flex h-[60px] w-[60px] rounded-full`}
                 >
-                  <Image 
-                    src={isHovered ? logo_service_dark : logo_service} 
-                    alt={item?.title} 
+                  <Image
+                    src={isHovered ? logo_service_dark : logo_service}
+                    alt={item?.title}
                   />
                 </div>
-                <BsArrowUpRight className="text-2xl icon" />
               </div>
               <div className="font-semibold mb-2 md:text-base text-xs ">
                 {item.label}
               </div>
-              <div className="md:text-sm text-[10px] ">{item.description}</div>
+              <div className="flex ">
+                <span>Learn more</span>
+                <BsArrowUpRight className="text-2xl icon" />
+              </div>
             </div>
           </Link>
         </motion.div>

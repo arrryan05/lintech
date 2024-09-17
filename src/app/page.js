@@ -11,6 +11,7 @@ import Layout from "@/component/layout/layout";
 import Reviews from "@/component/services/reviews";
 import TrustCompany from "@/component/trustCompany/trustCompany";
 import home_hero from "../../assets/HomeHero.png"
+import Social from "@/component/home/social";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <TypeOfTransport /> 
         <ImageGrid/>
         <TransportNetwork/>
+        <Social/>
         {/* <OurServices/> */}
         {/* <WhyChooseUs/> */}
         

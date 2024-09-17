@@ -30,8 +30,8 @@ function ContactHeader({
   };
 
   return (
-    <div className="bg-transparent w-full min-h-screen flex flex-col">
-      <div className="lg:px-28 md:px-14 px-5 md:py-11 py-5 flex justify-between">
+    <div className="bg-black text-white w-full min-h-screen flex flex-col">
+      <div className="lg:px-28 text-white md:px-14 px-5 md:py-11 py-5 flex justify-between">
 
         <div>
 
@@ -40,7 +40,7 @@ function ContactHeader({
             className="arrow-main absolute lg:left-28 md:left-14 left-5 border p-3 w-[60px] h-[60px] mb-2 rounded-full sm:scale-[1] scale-[0.5]"
             onClick={gobackHandler}
             >
-            <FaArrowLeftLong className="text-4xl" />
+            <FaArrowLeftLong className="text-4xl text-white" />
           </div>
         ) : (
           <div>

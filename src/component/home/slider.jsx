@@ -11,6 +11,7 @@ import cat4 from "../../../assets/CategoryCards/Catogory Card (3).png"
 import cat5 from "../../../assets/CategoryCards/Catogory Card (4).png"
 import cat6 from "../../../assets/CategoryCards/Catogory Card (5).png"
 import cat7 from "../../../assets/CategoryCards/Catogory Card (6).png"
+import cat8 from "../../../assets/CategoryCards/Catogory Card (7).png"
 
 
 const parentVariants = {
@@ -87,6 +88,12 @@ const boxes = [
     id: 7,
     name: "Singers",
     image: cat7,
+    href: "/services/roadTransport",
+  },
+  {
+    id: 8,
+    name: "Singers",
+    image: cat8,
     href: "/services/roadTransport",
   },
   

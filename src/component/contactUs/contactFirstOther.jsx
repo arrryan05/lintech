@@ -1,4 +1,4 @@
-import { ErrorMessage, Field } from "formik";
+import { ErrorMessage } from "formik";
 import React from "react";
 
 function ContactFirstOther({ setstepper }) {
@@ -8,10 +8,10 @@ function ContactFirstOther({ setstepper }) {
       Please specify what you require
       </div>
       <div className="col-span-4 flex justify-center ">
-        <Field
+        <input
           name="lookingForOther"
           type="text"
-          className="h-fit p-4 rounded-lg   bg-gray-100  outline-2 w-1/3 text-center"
+          className="h-fit p-4 rounded-lg   bg-gray-100 text-black outline-2 w-1/3 text-center"
           placeholder="Please specify what you require"
         />
         <div className="text-sm text-red-500">
@@ -21,7 +21,7 @@ function ContactFirstOther({ setstepper }) {
       <button
         type="button"
         onClick={() => setstepper(2)}
-        className="bg-blue-600 rounded-lg text-white col-span-4 mx-auto px-16 py-4"
+        className="bg-black text-white hover:bg-white hover:text-black rounded-lg text-white col-span-4 mx-auto px-16 py-4"
       >
         Next
       </button>
