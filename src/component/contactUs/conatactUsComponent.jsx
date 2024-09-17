@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import ContactFirst from "./contactFirst.jsx";
-import ContactFirstOther from "./ContactFirstOther.jsx";
-import ContactHeader from "./ContactHeader.jsx";
-import ContactSecond from "./ContactSecond.jsx";
-import ContactThird from "./ContactThird.jsx";
+import ContactFirstOther from "./contactFirstOther.jsx";
+import ContactHeader from "./contactHeader.jsx";
+import ContactSecond from "./contactSecond.jsx";
+import ContactThird from "./contactThird.jsx";
 
 function ContactUsComponent() {
   const [stepper, setstepper] = useState(0);
